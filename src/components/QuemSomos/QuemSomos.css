@@ -1,0 +1,52 @@
+.quem-somos {
+  background: linear-gradient(to right, #f6d365, #fda085);
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.missao-visao-valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.missao,
+.visao,
+.valores {
+  flex: 0 1 30%;
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.missao h3,
+.visao h3,
+.valores h3 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.valores ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.valores li {
+  margin-bottom: 8px;
+  color: #555;
+}

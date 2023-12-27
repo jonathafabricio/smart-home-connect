@@ -1,0 +1,26 @@
+.content .smart-home-connect-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.content .smart-home-connect-section .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.instagram-media {
+    max-width: 100%;
+    width: calc(33.333% - 20px);
+}
+
+.smart-home-connect-section h2 {
+    margin: 24px 0 32px 0;
+}
+
+@media (max-width: 600px) {
+    .instagram-media {
+        width: 100%;
+    }
+}

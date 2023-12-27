@@ -1,0 +1,149 @@
+.solutions-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.solutions-section h2 {
+    margin-bottom: 24px;
+}
+
+.solutions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.solutions-section-details {
+    margin-bottom: 24px;
+}
+
+.solution.card {
+    width: 280px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.solution.card .front {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.solution.card .front h3 {
+    width: 280px;
+    margin: 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.solution.card:hover .front {
+    background: rgba(255, 255, 255, 0);
+}
+
+.solution.card .back {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.solution.card:hover .back {
+    display: block;
+}
+
+.solution {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.solution h3 {
+    color: #333;
+}
+
+.solution p {
+    color: #666;
+}
+
+.typed-text {
+    font-size: inherit;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* - - - - cards 3d - - - - */
+.card-inner {
+    width: 280px;
+    height: 300px;
+}
+
+.card {
+    perspective: 1000px;
+    width: 280px;
+    height: 300px;
+}
+
+.card-inner {
+
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.front {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    background-color: #f5f5f5;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 800px) {
+    .solution {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .solution {
+        width: 100%;
+    }
+}
